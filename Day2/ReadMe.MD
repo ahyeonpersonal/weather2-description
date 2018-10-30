@@ -1,0 +1,12 @@
+1. set my API key
+const API_KEY = "18fff390d86582a57fabf47a890d2816";
+
+2. calling API : async await
+getWeather = async () => {
+  const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid${API_KEY}=&units=metric`); 
+  
+  //`` : able to inject the variable that you define in the files. ex) ${API_KEY}
+
+  // 3. convert api to readable json files
+  const data = await api_call.json();
+}
