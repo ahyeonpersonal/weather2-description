@@ -7,3 +7,4 @@ App.js #26) <Form  getWeather={this.getWeather} />
 
 6. adding getWeather permission on Form.js file
 Form.js #6) <form onSubmit={this.props.getWeather}> 
+
