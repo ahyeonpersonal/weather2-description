@@ -1,0 +1,9 @@
+4. Displyaing API on Form.js using 'Props' (App.js)
+App.js #19) console.log(data);
+//this is only displayed on console panel. To display it on Form.js I need 'Props'
+
+5. Give Permission to acess api to 'Form' 
+App.js #26) <Form  getWeather={this.getWeather} /> 
+
+6. adding getWeather permission on Form.js file
+Form.js #6) <form onSubmit={this.props.getWeather}> 
