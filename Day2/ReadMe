@@ -9,4 +9,5 @@ getWeather = async () => {
 
   // 3. convert api to readable json files
   const data = await api_call.json();
+  
 }
