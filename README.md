@@ -1,5 +1,5 @@
 # weather2-description
-describing weather2 app step by step
+Describing weather2 app step by step
 
 #DAY1
 Create App structure
