@@ -1,0 +1,49 @@
+Displaying weather info (city, country, temperature, humidity, description, error) in Weather.js
+
+8. getting City & Country from 'Search' event
+App.js #28,29 )
+const city = e.target.elements.city.value;
+const country = e.target.elements.country.value;
+
+9. Setting 6 weather states : before getting city & country(event), they are undefied.
+App.js #12)
+state={
+  temperature : undefiend,
+  city : undefiend,
+  country : undefiend,
+  humidity : undefiend,
+  description : undefiend,
+  error : undefiend
+}
+
+10. getting 6states (after event is created) from console(log)
+App.js #40)
+this.setState({
+temperature : data.main.temp,
+city:data.name,
+country : data.sys.country,
+humidity : data.main.humidity,
+description  data.weather[0].description,
+error : " "
+});
+
+11. Giving 6states information to Weather.js 
+App.js #57)
+<Weather 
+  temperature = {this.state.temperature}
+  city={this.state.city}
+  country = {this.state.country}
+  humidity={this.state.humidity}
+  description={this.state.description}
+  error={this.state.eror}
+ />
+ 
+ 12. Displaying 6 states on Weather.js file with props
+ Weather.js #8,9,19,11,12
+ <div>
+  {this.props.city}
+  {this.props.country}
+  {this.props.temperature}
+  {this.props.humidity}
+  {this.props.description}
+ </div>
