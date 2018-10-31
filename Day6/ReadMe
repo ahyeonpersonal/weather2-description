@@ -1,0 +1,35 @@
+Displaying Error when city & country is invalid
+(Currently, when City & Country is non_exist, App gives user Error)
+
+14. Displaying weather information when City & Coutny are 'TRUE'
+App.js #44-54
+
+if (city && country){
+        //10. getting 6states from console(log)
+        this.setState({
+          temperature:data.main.temp,
+          city:data.name,
+          country:data.sys.country,
+          humidity: data.main.humidity,
+          description: data.weather[0].description,
+          error :""
+        });
+    }
+    
+15. Else : (If city & country are vacant) display Error "Please Enter the value"
+App.js #56-65
+
+else{
+        this.setState({
+          temperature:undefined,
+          city:undefined,
+          country:undefined,
+          humidity: undefined,
+          description: undefined,
+          error :"Please enter the value"
+        }); 
+    }
+   
+16. Displaying Error in Weather.js
+Weather.js #16
+{this.props.error && <p>{this.props.error}</p>}
