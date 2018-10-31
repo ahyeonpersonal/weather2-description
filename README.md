@@ -20,3 +20,6 @@ Weather.js UI update : Undisplaying / displaying weather info
 Error : When City & Country is invalid, display Error
 
 #from day 1 to 6 
+
+#DAY7
+Update 'Stateless Functional Componets' Files
