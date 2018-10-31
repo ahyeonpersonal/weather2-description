@@ -10,4 +10,3 @@ Form.js #6) <form onSubmit={this.props.getWeather}>
 
 7. prevent Event-page refreshment when submitting 'Search' button
 App.js #12,13 ) e.preventDefault(); 
-
