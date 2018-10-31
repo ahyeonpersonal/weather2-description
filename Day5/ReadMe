@@ -1,0 +1,8 @@
+13. Undisplaying weather information until user press 'Search' Button => Using 'Condition'
+Weather.js #11,12,13,14
+<div>
+  {this.props.city && this.props.country && <p>Location : {this.props.city} , {this.props.country}</p> }
+  {this.props.temperature && <p>Temperature : {this.props.temperature}</p> }
+  {this.props.humidity && <p>Humidity : {this.props.humidity}</p> }
+  {this.props.condition && <p>Condition : {this.props.description}</p> }
+</div>
