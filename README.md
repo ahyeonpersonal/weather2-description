@@ -15,3 +15,6 @@ Displaying Weather information in Weather.js
 
 #DAY5
 Weather.js UI update : Undisplaying / displaying weather info
+
+#DAY6
+Error : When City & Country is invalid, display Error
