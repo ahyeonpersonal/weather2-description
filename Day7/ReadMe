@@ -1,0 +1,35 @@
+2	types of React component
+(1)	Class Components : which has state that requires class
+(2)	Stateless Functional Components :  which doesn’t contain any states. 
+    Ex) Weather.js / Form.js / Titles.js
+
+UPDATE1 : delete 'class'
+17. Since we don't have any state in Weather.js / Form.js / Titles.js we can delete 'class' 
+17-1) since we don't have 'class' we can't use 'this' keyword, so I delete every 'this' in the state
+17-2,18) still I got the error, so I mentioned (props) in Weather.js #6
+
+const Weather = (props)=> { 
+        return(
+            <div>
+                {props.city && props.country && <p>Location : {props.city} , {props.country}</p> }
+                {props.temperature && <p>Temperature : {props.temperature}</p> }
+                {props.humidity && <p>Humidity : {props.humidity}</p> }
+                {props.condition && <p>Condition : {props.description}</p> }
+                {props.error && <p>{props.error}</p>}
+            </div>
+        );    
+}
+
+UPDATE2 : delete 'return'
+//19. Still, I can delete 'return();' as well = this mean you are explicitly returning something from Error function
+// Plus, I don't need bracket () next to props in Weather.js #5
+
+const Weather = props => (
+    <div>
+        {props.city && props.country && <p>Location : {props.city} , {props.country}</p> }
+        {props.temperature && <p>Temperature : {props.temperature}</p> }
+        {props.humidity && <p>Humidity : {props.humidity}</p> }
+        {props.condition && <p>Condition : {props.description}</p> }
+        {props.error && <p>{props.error}</p>}
+    </div>
+)
